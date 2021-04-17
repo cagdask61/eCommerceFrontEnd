@@ -1,0 +1,22 @@
+<h1 *ngIf="dataLoaded === false">yükleniyor</h1>
+<div *ngIf="dataLoaded">
+  <mat-card class="example-card mt-5 mb-5" *ngFor="let product of productData">
+    <mat-card-header>
+      <mat-card-title title="Ürün ismi">
+        {{product.productName}}
+      </mat-card-title>
+      <mat-card-subtitle>{{product.categoryName}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="text-center">
+        {{
+        product.description
+        }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">View</button>
+      <button mat-button color="primary">Update</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

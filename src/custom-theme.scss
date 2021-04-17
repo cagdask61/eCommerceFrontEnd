@@ -1,0 +1,20 @@
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$eCommerceFrontEnd-primary: mat-palette($mat-indigo);
+$eCommerceFrontEnd-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$eCommerceFrontEnd-warn: mat-palette($mat-red);
+
+$eCommerceFrontEnd-theme: mat-light-theme((
+  color: (
+    primary: $eCommerceFrontEnd-primary,
+    accent: $eCommerceFrontEnd-accent,
+    warn: $eCommerceFrontEnd-warn
+  )
+));
+
+@include angular-material-theme($eCommerceFrontEnd-theme);
+

@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
