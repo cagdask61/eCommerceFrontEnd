@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
 
   productData:ProductDto[];
   dataLoaded:boolean=false;
+  message:string;
   constructor(private productService:ProductService,private activedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -40,6 +41,12 @@ export class ProductListComponent implements OnInit {
     this.productService.getByCategory(categoryId).subscribe(response=>{
       this.productData = response.data
       this.dataLoaded = true
+    })
+  }
+
+  productDelete(productId:number){
+    this.productService.productDtoDelete(productId).subscribe(response=>{
+      this.message = response.message;
     })
   }
 }

@@ -54,6 +54,10 @@ import { CategoryUpdateComponent } from './Components/CategoryComponents/categor
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './Components/Start/navbar/navbar.component';
+import { FooterComponent } from './Components/Start/footer/footer.component';
+import { LoginComponent } from './Components/UserComponents/login/login.component';
+import { RegisterComponent } from './Components/UserComponents/register/register.component';
+import { AccountComponent } from './Components/UserComponents/account/account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +71,11 @@ import { NavbarComponent } from './Components/Start/navbar/navbar.component';
     CategoryAddComponent,
     CategoryDeleteComponent,
     CategoryUpdateComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

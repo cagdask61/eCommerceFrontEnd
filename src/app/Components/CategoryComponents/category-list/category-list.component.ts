@@ -21,4 +21,5 @@ export class CategoryListComponent implements OnInit {
       this.categoriesData = response.data
     })
   }
+
 }

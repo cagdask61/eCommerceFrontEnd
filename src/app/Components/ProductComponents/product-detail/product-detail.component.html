@@ -1,1 +1,20 @@
-<p>product-detail works!</p>
+
+<mat-card class="example-card mt-4 mb-3">
+    <mat-card-content>
+        <h2 class="text-center text-dark">{{productName}}</h2>
+      <p class="text-dark text-center">
+        {{description}}
+      </p>
+    </mat-card-content>
+    <mat-card-footer>
+        <p class="text-center">
+            Fiyatı : <span class="fw-bold">{{unitPrice}}</span>
+        </p>
+        <p class="text-center">
+            Stoktaki miktarı : <span class="fw-bold">{{unitsInStock}}</span>
+        </p>
+        <p class="text-center">
+           Üretim Durumu : <span class="fw-bold">{{productState}}</span>
+        </p>
+    </mat-card-footer>
+  </mat-card>

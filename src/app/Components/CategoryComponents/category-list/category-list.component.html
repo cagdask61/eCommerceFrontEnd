@@ -1,6 +1,6 @@
 
 <mat-selection-list [multiple]="false">
-  <mat-list-option class="text-center" routerLink="/">Tümü</mat-list-option>
+  <mat-list-option class="text-center text-primary" routerLink="/">Tümü</mat-list-option>
     <mat-list-option class="text-center"  title="{{category.description}}" *ngFor="let category of categoriesData" routerLink="/category/{{category.id}}">
       {{category.categoryName}}
   </mat-list-option>
